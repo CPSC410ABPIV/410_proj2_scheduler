@@ -8,8 +8,7 @@
 
 #include "../includes/dispatcher.h"
 PCB Dispatcher::get_from_CPU() {
-    PCB retVal;//TODO
-    return retVal;
+    return cpu->get_process_off_core();
 }
 void Dispatcher::put_on_CPU(PCB &process) {
     cpu->put_process_on_core(process);

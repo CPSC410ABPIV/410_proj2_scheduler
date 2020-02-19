@@ -27,5 +27,19 @@ float Stats::get_av_wait_time() {
     return av_wait_time;
 }
 void Stats::calcStats() {
-    //TODO update wait time, turnaround time, response time
+    float count_wait_time = 0;
+    float count_turnaround_time = 0;
+    float count_response_time = 0;
+    for(PCB process : *vec){
+        count_wait_time +=  process.finish_time
+                            -process.arrival_time
+                            -process.required_cpu_time;
+        count_turnaround_time += process.finish_time
+                                -process.arrival_time;
+        count_response_time +=  process.start_time
+                                -process.arrival_time;
+    }
+    av_wait_time = count_wait_time/vec->size();
+    av_turnaround_time = count_turnaround_time/vec->size();
+    av_response_time = count_response_time/vec->size();
 }

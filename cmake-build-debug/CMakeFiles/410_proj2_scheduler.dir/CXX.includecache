@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/allan/CLionProjects/410_proj2_scheduler/dispatcher/dispatcher.cpp
+../includes/dispatcher.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/dispatcher.h
+
+/home/allan/CLionProjects/410_proj2_scheduler/includes/CPU.h
+constants.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
+PCB.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/PCB.h
+
 /home/allan/CLionProjects/410_proj2_scheduler/includes/PCB.h
 constants.h
 /home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
@@ -13,6 +23,12 @@ constants.h
 /home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
 iostream
 -
+
+/home/allan/CLionProjects/410_proj2_scheduler/includes/dispatcher.h
+constants.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
+CPU.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/CPU.h
 
 /home/allan/CLionProjects/410_proj2_scheduler/includes/stats.h
 vector
