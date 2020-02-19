@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/allan/CLionProjects/410_proj2_scheduler/includes/PCB.h
+constants.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
+
+/home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
+iostream
+-
+
+/home/allan/CLionProjects/410_proj2_scheduler/includes/stats.h
+vector
+-
+../includes/PCB.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/PCB.h
+
+/home/allan/CLionProjects/410_proj2_scheduler/stats/stats.cpp
+../includes/stats.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/stats.h
+

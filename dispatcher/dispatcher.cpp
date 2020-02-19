@@ -7,10 +7,6 @@
  */
 
 #include "../includes/dispatcher.h"
-Dispatcher::~Dispatcher() {
-    delete  cpu;
-    delete is_valid_job_on_cpu;//not sure if needed
-}
 PCB Dispatcher::get_from_CPU() {
     PCB retVal;//TODO
     return retVal;

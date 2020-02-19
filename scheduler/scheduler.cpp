@@ -9,11 +9,6 @@
 #include "../includes/scheduler.h"
 
 using namespace std;
-Scheduler::~Scheduler() {//Override
-    delete ready_q;
-    delete preemptive;
-    delete time_slice;
-}
 void Scheduler::add(PCB p) {
     //TODO actually do something
 }
