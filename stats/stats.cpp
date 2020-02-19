@@ -17,6 +17,12 @@ void Stats::showAllProcessInfo() {
                 " finished:"<<process.finish_time;
     }
 }
+Stats::~Stats() //override
+    delete vec;
+    delete av_wait_time;
+    delete av_turnaround_time;
+    delete av_response_time;
+}
 float Stats::get_av_response_time() {
     return av_response_time
 }
