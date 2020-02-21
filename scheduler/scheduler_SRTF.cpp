@@ -14,13 +14,14 @@
 
 bool Scheduler_SRTF::time_to_switch_processes(int tick_count, PCB &p) {
     sort();
-    return  Scheduler::time_to_switch_processes(tick_count, p)
-            ||ready_q->front().remaining_cpu_time<0
-            ||ready_q->front().remaining_cpu_time<=p.remaining_cpu_time;
+    bool retVal = Scheduler::time_to_switch_processes(tick_count, p)
+                  || ready_q->front().remaining_cpu_time < 0
+                  || ready_q->front().remaining_cpu_time <= p.remaining_cpu_time;
+    return retVal;
 }
 /**comparator function for sorting PCB vector*/
 bool compareFunction(PCB one, PCB two){
-    return one.remaining_cpu_time>two.remaining_cpu_time;
+    return one.remaining_cpu_time<two.remaining_cpu_time;
 }
 void Scheduler_SRTF::sort() {
     std::vector<PCB> ready_Vector;

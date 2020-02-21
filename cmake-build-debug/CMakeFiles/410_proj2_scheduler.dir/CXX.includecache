@@ -14,13 +14,23 @@ constants.h
 iostream
 -
 
-/home/allan/CLionProjects/410_proj2_scheduler/includes/stats.h
-vector
+/home/allan/CLionProjects/410_proj2_scheduler/includes/scheduler.h
+queue
 -
-../includes/PCB.h
+constants.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
+PCB.h
 /home/allan/CLionProjects/410_proj2_scheduler/includes/PCB.h
 
-/home/allan/CLionProjects/410_proj2_scheduler/stats/stats.cpp
-../includes/stats.h
-/home/allan/CLionProjects/410_proj2_scheduler/includes/stats.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/scheduler_SRTF.h
+scheduler.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/scheduler.h
+
+/home/allan/CLionProjects/410_proj2_scheduler/scheduler/scheduler_SRTF.cpp
+vector
+-
+algorithm
+-
+../includes/scheduler_SRTF.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/scheduler_SRTF.h
 
