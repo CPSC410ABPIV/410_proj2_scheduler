@@ -8,11 +8,14 @@
 
 #include "../includes/dispatcher.h"
 PCB Dispatcher::get_from_CPU() {
-    return cpu->get_process_off_core();
+    return cpu->get_process_off_core();//returns process on core or uninitialized process
 }
 void Dispatcher::put_on_CPU(PCB &process) {
-    cpu->put_process_on_core(process);
+    if(!isValidJobOnCPU()){
+        cpu->put_process_on_core(process);
+    }
 }
 bool Dispatcher::isValidJobOnCPU() {
-    return cpu->get_COPY_of_Current_Process().isEmpty();//Sounds right
+    is_valid_job_on_cpu = !cpu->get_COPY_of_Current_Process().isEmpty();
+    return is_valid_job_on_cpu;
 }

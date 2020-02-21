@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/allan/CLionProjects/410_proj2_scheduler/dispatcher/dispatcher.cpp
-../includes/dispatcher.h
-/home/allan/CLionProjects/410_proj2_scheduler/includes/dispatcher.h
-
-/home/allan/CLionProjects/410_proj2_scheduler/includes/CPU.h
-constants.h
-/home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
-PCB.h
-/home/allan/CLionProjects/410_proj2_scheduler/includes/PCB.h
-
 /home/allan/CLionProjects/410_proj2_scheduler/includes/PCB.h
 constants.h
 /home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
@@ -24,19 +14,15 @@ constants.h
 iostream
 -
 
-/home/allan/CLionProjects/410_proj2_scheduler/includes/dispatcher.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/scheduler.h
+queue
+-
 constants.h
 /home/allan/CLionProjects/410_proj2_scheduler/includes/constants.h
-CPU.h
-/home/allan/CLionProjects/410_proj2_scheduler/includes/CPU.h
-
-/home/allan/CLionProjects/410_proj2_scheduler/includes/stats.h
-vector
--
-../includes/PCB.h
+PCB.h
 /home/allan/CLionProjects/410_proj2_scheduler/includes/PCB.h
 
-/home/allan/CLionProjects/410_proj2_scheduler/stats/stats.cpp
-../includes/stats.h
-/home/allan/CLionProjects/410_proj2_scheduler/includes/stats.h
+/home/allan/CLionProjects/410_proj2_scheduler/scheduler/scheduler.cpp
+../includes/scheduler.h
+/home/allan/CLionProjects/410_proj2_scheduler/includes/scheduler.h
 

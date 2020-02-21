@@ -10,17 +10,20 @@
 
 using namespace std;
 void Scheduler::add(PCB p) {
-    //TODO actually do something
+    ready_q->push(p);
 }
 PCB Scheduler::getNext() {
-    PCB process;
-    return process;//TODO actually do something
+    if(ready_q->empty()){
+        return PCB();
+    }
+    PCB process = ready_q->front();ready_q->pop();//needs to pop?
+    return process;
 }
 bool Scheduler::isEmpty() {
-    return false;//TODO actually do something
+    return ready_q->empty();
 }
 bool Scheduler::time_to_switch_processes(int tick_count, PCB &p) {
-    return false;//TODO actually do something
+    return  p.remaining_cpu_time <= 0;
 }
 
 

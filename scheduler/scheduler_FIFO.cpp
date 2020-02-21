@@ -12,8 +12,7 @@
 #include "../includes/scheduler_FIFO.h"
 
 bool Scheduler_FIFO::time_to_switch_processes(int tick_count, PCB &p) {
-    //TODO change behavior probs
-    return Scheduler::time_to_switch_processes(tick_count,p);
+    return  p.remaining_cpu_time <= 0;
 }
 void Scheduler_FIFO::sort() {
     //do nothing in theory
