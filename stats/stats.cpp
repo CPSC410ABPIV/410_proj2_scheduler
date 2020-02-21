@@ -13,14 +13,14 @@ Stats::Stats(std::vector <PCB> &finished_vector) {
     av_wait_time = 0;
     av_turnaround_time = 0;
     av_response_time = 0;
+    calcStats();
 };
 void Stats::showAllProcessInfo() {
-    calcStats();
     for(PCB process : *vec){
         cout << "Process 1 Required CPU time:"<<process.required_cpu_time<<
                 "  arrived:"<<process.arrival_time<<
                 " started:"<<process.start_time<<
-                " finished:"<<process.finish_time;
+                " finished:"<<process.finish_time<<"\n";
     }
 }
 float Stats::get_av_response_time() {
@@ -33,7 +33,6 @@ float Stats::get_av_wait_time() {
     return av_wait_time;
 }
 void Stats::calcStats() {
-    cout<< "in calc stats\n";
     float count_wait_time = 0;
     float count_turnaround_time = 0;
     float count_response_time = 0;

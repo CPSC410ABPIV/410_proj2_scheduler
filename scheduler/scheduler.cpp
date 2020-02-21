@@ -11,6 +11,7 @@
 using namespace std;
 void Scheduler::add(PCB p) {
     ready_q->push(p);
+    sort();
 }
 PCB Scheduler::getNext() {
     if(ready_q->empty()){
